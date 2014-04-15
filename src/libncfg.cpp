@@ -1,7 +1,9 @@
-#include "libncfg.h"
+#include <libncfg.h>
+#include <iostream>
 
 LibNCFG::LibNCFG()
 {
+    std::cout << "LibNCFG constructor!\n";
     //init - find and load dynamically loaded modules
 }
 

@@ -4,6 +4,8 @@
 #include <vector>
 #include <string>
 
+#include <net-device/net-device.h>
+
 class LibNCFG{
     private:
         std::vector<NetDevice *> devices;

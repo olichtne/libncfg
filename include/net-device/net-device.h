@@ -2,6 +2,7 @@
 #define __NETDEVICE_H__
 
 #include <string>
+#include <common.h>
 
 class NetDevice{
     public:
