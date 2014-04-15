@@ -4,6 +4,6 @@
 #include "l-aggregation-device.h"
 
 class Bonding: private LAggregationDevice{
-}
+};
 
 #endif

@@ -4,6 +4,6 @@
 #include "l-aggregation-device.h"
 
 class Team: private LAggregationDevice{
-}
+};
 
 #endif

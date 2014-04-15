@@ -4,6 +4,6 @@
 #include "wimax-device.h"
 
 class WiMAXDevice: private WirelessDevice{
-}
+};
 
 #endif

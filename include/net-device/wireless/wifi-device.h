@@ -4,6 +4,6 @@
 #include "wireless-device.h"
 
 class WiFiDevice: private WirelessDevice{
-}
+};
 
 #endif

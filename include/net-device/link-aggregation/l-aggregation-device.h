@@ -4,6 +4,6 @@
 #include "../net-device.h"
 
 class LAggregationDevice: private NetDevice{
-}
+};
 
 #endif

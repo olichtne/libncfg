@@ -19,6 +19,6 @@ class NetDevice{
         virtual bool del_ip_addr(IpAddr &addr) = 0;
 
         virtual int get_device_type() = 0;
-}
+};
 
 #endif

@@ -26,6 +26,6 @@ class LibNCFG{
         void spin_callbacks();
 
         //add tables
-}
+};
 
 #endif
