@@ -2,3 +2,4 @@ CMake*
 *.cmake
 !CMakeLists.txt
 Makefile
+*.a
