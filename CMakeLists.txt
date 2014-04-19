@@ -3,3 +3,7 @@ project(lib-ncfg)
 
 add_subdirectory(include)
 add_subdirectory(src)
+
+include_directories(${PROJECT_SOURCE_DIR}/include)
+add_executable(main main.cpp)
+target_link_libraries(main lib-ncfg)
