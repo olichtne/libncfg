@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-#include <net-device/net-device.h>
+#include <net-device.h>
 
 class LibNCFG{
     private:
