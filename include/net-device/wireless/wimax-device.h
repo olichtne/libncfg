@@ -3,7 +3,7 @@
 
 #include <net-device/wireless-device.h>
 
-class WiMAXDevice: private WirelessDevice{
+class WiMAXDevice: public WirelessDevice{
 };
 
 #endif

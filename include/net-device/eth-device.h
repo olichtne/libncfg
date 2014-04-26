@@ -3,7 +3,7 @@
 
 #include <net-device.h>
 
-class EthDevice: private NetDevice{
+class EthDevice: public NetDevice{
     public:
         virtual std::vector<char> get_hw_address() = 0;
         virtual bool set_hw_address(std::vector<char> hw_addr) = 0;

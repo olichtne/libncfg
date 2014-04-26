@@ -3,7 +3,7 @@
 
 #include <net-device.h>
 
-class LAggregationDevice: private NetDevice{
+class LAggregationDevice: public NetDevice{
 };
 
 #endif

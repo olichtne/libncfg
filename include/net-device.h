@@ -2,6 +2,7 @@
 #define __NETDEVICE_H__
 
 #include <string>
+#include <vector>
 #include <common.h>
 
 class NetDevice{

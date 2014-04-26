@@ -3,7 +3,7 @@
 
 #include <net-device/l-aggregation-device.h>
 
-class Bonding: private LAggregationDevice{
+class Bonding: public LAggregationDevice{
 };
 
 #endif

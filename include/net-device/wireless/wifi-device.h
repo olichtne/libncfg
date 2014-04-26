@@ -3,7 +3,7 @@
 
 #include <net-device/wireless-device.h>
 
-class WiFiDevice: private WirelessDevice{
+class WiFiDevice: public WirelessDevice{
 };
 
 #endif

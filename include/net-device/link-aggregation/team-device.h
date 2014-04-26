@@ -3,7 +3,7 @@
 
 #include <net-device/l-aggregation-device.h>
 
-class Team: private LAggregationDevice{
+class Team: public LAggregationDevice{
 };
 
 #endif
