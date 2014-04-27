@@ -5,8 +5,13 @@
 
 class EthDevice: public NetDevice{
     public:
-        virtual std::vector<char> get_hw_address() = 0;
-        virtual bool set_hw_address(std::vector<char> hw_addr) = 0;
+        virtual std::vector<char> get_hw_address()
+            {throw MethodNotImplemented();}
+        virtual bool set_hw_address(std::vector<char> hw_addr)
+            {throw MethodNotImplemented();}
 };
+
+typedef EthDevice* create_ethdev();
+typedef void destroy_ethdev(EthDevice*);
 
 #endif

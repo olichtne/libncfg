@@ -6,4 +6,7 @@
 class WiFiDevice: public WirelessDevice{
 };
 
+typedef WiFiDevice* create_wifidev();
+typedef void destroy_wifidev(WiFiDevice*);
+
 #endif

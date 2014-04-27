@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 project(lib-ncfg)
 
-SET(CMAKE_CXX_FLAGS "-std=c++11")
+SET(CMAKE_CXX_FLAGS "-std=c++11 -g")
 
 add_subdirectory(include)
 add_subdirectory(src)

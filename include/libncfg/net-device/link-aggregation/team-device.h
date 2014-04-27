@@ -3,7 +3,10 @@
 
 #include <libncfg/net-device/l-aggregation-device.h>
 
-class Team: public LAggregationDevice{
+class TeamDevice: public LAggregationDevice{
 };
+
+typedef TeamDevice* create_teamdev();
+typedef void destroy_teamdev(TeamDevice*);
 
 #endif

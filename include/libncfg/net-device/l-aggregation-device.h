@@ -6,4 +6,7 @@
 class LAggregationDevice: public NetDevice{
 };
 
+typedef LAggregationDevice* create_laggrdev();
+typedef void destroy_laggrdev(LAggregationDevice*);
+
 #endif

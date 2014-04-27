@@ -3,7 +3,10 @@
 
 #include <libncfg/net-device/l-aggregation-device.h>
 
-class Bonding: public LAggregationDevice{
+class BondingDevice: public LAggregationDevice{
 };
+
+typedef BondingDevice* create_bonddev();
+typedef void destroy_bonddev(BondingDevice*);
 
 #endif

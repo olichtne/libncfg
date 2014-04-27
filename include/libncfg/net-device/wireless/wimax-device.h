@@ -6,4 +6,7 @@
 class WiMAXDevice: public WirelessDevice{
 };
 
+typedef WiMAXDevice* create_wimaxdev();
+typedef void destroy_wimaxdev(WiMAXDevice*);
+
 #endif
