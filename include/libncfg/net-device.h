@@ -3,7 +3,7 @@
 
 #include <string>
 #include <vector>
-#include <common.h>
+#include <libncfg/common.h>
 
 class NetDevice{
     public:

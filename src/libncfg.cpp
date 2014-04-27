@@ -1,4 +1,4 @@
-#include <libncfg.h>
+#include <libncfg/libncfg.h>
 #include <iostream>
 
 LibNCFG::LibNCFG()
