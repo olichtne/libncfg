@@ -6,8 +6,14 @@
 
 #include <libncfg/net-device.h>
 
+enum sys_type{
+    LINUX,
+    FREEBSD,
+};
+
 class LibNCFG{
     private:
+        enum sys_type system_type;
         std::vector<NetDevice *> devices;
 
     public:

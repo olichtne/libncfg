@@ -1,9 +1,12 @@
 #ifndef __ETH_DEVICE_H__
 #define __ETH_DEVICE_H__
 
+#include <libncfg/common.h>
 #include <libncfg/net-device.h>
 
 class EthDevice: public NetDevice{
+    private:
+        enum dev_type type = ETH_DEVICE;
     public:
         virtual std::vector<char> get_hw_address()
             {throw MethodNotImplemented();}

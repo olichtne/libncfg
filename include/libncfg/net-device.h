@@ -6,6 +6,8 @@
 #include <libncfg/common.h>
 
 class NetDevice{
+    private:
+        enum dev_type type = NET_DEVICE;
     public:
         virtual int get_if_id() {throw MethodNotImplemented();}
 
@@ -21,8 +23,8 @@ class NetDevice{
         virtual bool del_ip_addr(IpAddr &addr)
             {throw MethodNotImplemented();}
 
-        virtual int get_device_type()
-            {throw MethodNotImplemented();}
+        virtual enum dev_type get_device_type() final
+            {return this->type;}
 };
 
 typedef NetDevice* create_netdev();
