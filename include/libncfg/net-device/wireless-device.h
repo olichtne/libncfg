@@ -6,7 +6,10 @@
 
 class WirelessDevice: public NetDevice{
     private:
-        enum dev_type type = WIRELESS_DEVICE;
+        static const int type = WIRELESS_DEVICE;
+    public:
+        virtual const int get_device_type()
+            {return WirelessDevice::type;}
 };
 
 typedef WirelessDevice* create_wirelessdev();

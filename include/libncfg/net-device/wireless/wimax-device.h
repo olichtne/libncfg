@@ -6,7 +6,10 @@
 
 class WiMAXDevice: public WirelessDevice{
     private:
-        enum dev_type type = WIMAX_DEVICE;
+        static const int type = WIMAX_DEVICE;
+    public:
+        virtual const int get_device_type()
+            {return WiMAXDevice::type;}
 };
 
 typedef WiMAXDevice* create_wimaxdev();

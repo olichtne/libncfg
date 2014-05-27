@@ -1,0 +1,6 @@
+file(GLOB dirs "*")
+foreach(dir ${dirs})
+    IF(EXISTS ${dir}/)
+        add_subdirectory(${dir})
+    ENDIF()
+endforeach()

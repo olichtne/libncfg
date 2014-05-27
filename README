@@ -1,0 +1,66 @@
+# LibNCFG - Network Configuration Library
+
+## Compilation
+Create a new directory where you will build the library:
+```
+$ mkdir build
+$ cd build
+```
+Run cmake and make:
+```
+$ cmake /path/to/libncfg/source/dir/
+$ make
+```
+
+## Running the example application
+The example application is automatically compiled with the rest of the library,
+the binary is called `main` and should be in the build/ directory.
+
+Running ```./main help``` will list all available commands
+
+## Examples
+
+Before testing the application it is a good idea to create a few \emph{dummy}
+devices, unfortunately this is not yet supported by the library so you need to
+run the following commands, with root privileges:
+```
+$ ip link add dev dummy0 type dummy
+$ ip link add dev dummy0 type dummy
+```
+
+To test the application you can try the following commands. It is assumed that
+you have root privileges. To list information about detected devices:
+```
+./main list
+```
+
+To change the state of a device (you need root privileges for this):
+```
+./main set dev dummy0 down
+```
+
+To create a new bonding device and enslave the dummy devices:
+```
+modprobe bonding
+./main add-device type bond name bond1
+./main set dev dummy0 master bond1
+./main add-slave dev bond1 dummy1
+./main list
+```
+
+And to remove the created bonded device:
+```
+./main del-device bond1
+```
+
+You can also add IP addresses to the dummy devices:
+```
+./main add-addr dev dummy0 192.168.1.1/23
+./main add-addr dev dummy0 fe80::2/64
+./main list
+```
+
+Or change their MAC address:
+```
+./main set dev dummy0 hwaddr 00:11:22:33:44:55
+```

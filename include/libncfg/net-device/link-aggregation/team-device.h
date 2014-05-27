@@ -2,11 +2,14 @@
 #define __TEAM_DEVICE_H__
 
 #include <libncfg/common.h>
-#include <libncfg/net-device/l-aggregation-device.h>
+#include <libncfg/net-device/l-aggr-device.h>
 
-class TeamDevice: public LAggregationDevice{
+class TeamDevice: public LAggrDevice{
     private:
-        enum dev_type type = TEAM_DEVICE;
+        static const int type = TEAM_DEVICE;
+    public:
+        virtual const int get_device_type()
+            {return TeamDevice::type;}
 };
 
 typedef TeamDevice* create_teamdev();

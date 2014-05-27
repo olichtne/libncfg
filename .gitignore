@@ -3,3 +3,4 @@ CMake*
 !CMakeLists.txt
 Makefile
 *.a
+build
